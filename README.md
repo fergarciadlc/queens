@@ -3,7 +3,7 @@
 This application is a proposed solution for the [N-Queens puzzle](https://en.wikipedia.org/wiki/Eight_queens_puzzle), presented in an API and web service form.
 
 ## Contents:
- * [Set up local environment](#set-up-local-envorinment)
+ * [Setup local environment](#setup-local-environment)
  * [Running app](#running-app)
  * [Endpoints](#endpoints)
  * [Testing](#testing)
@@ -119,7 +119,7 @@ If the register is not in the database:
 This approach is faster because it just queries in the database and shows the results, instead of running the calculations for every request.
 
 ## Testing
-Unit testing was implemented using [pytest](https://docs.pytest.org/en/stable/), the test iterates over N in the NQueens function and checks that results correspond with [Wikipedia's](https://en.wikipedia.org/wiki/Eight_queens_puzzle), as well as check the types of values and correct numbers.
+Unit testing was implemented using [pytest](https://docs.pytest.org/en/stable/), within a continuous integration with [Travis CI](https://travis-ci.org/), the test iterates over N in the NQueens function and checks that results correspond with [Wikipedia's](https://en.wikipedia.org/wiki/Eight_queens_puzzle), as well as check the types of values,  correct numbers, endpoints among other things.
 
 Run:
 
